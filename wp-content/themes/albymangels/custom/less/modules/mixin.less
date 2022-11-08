@@ -1,0 +1,26 @@
+.transition-compat(@arguments) {
+	-webkit-transition: @arguments;
+	-moz-transition: @arguments;
+	-o-transition: @arguments;
+	transition: @arguments;
+}
+
+.transform-compat(@posX, @posY){
+	-webkit-transform: translate(@posX, @posY);
+	-moz-transform: translate(@posX, @posY);
+	-o-transform: translate(@posX, @posY);
+	transform: translate(@posX, @posY);
+}
+
+.bg-inline(@size, @repeat, @pos) {
+	background-size: @size;
+	background-repeat: @repeat;
+	background-position: @pos;
+}
+
+.opacity-compat(@val){
+	-webkit-opacity: @val;
+	-moz-opacity: @val;
+	-o-opacity: @val;
+	opacity: @val;
+}

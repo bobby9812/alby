@@ -1,0 +1,11 @@
+header {
+  top: 0;
+  z-index: 99999;
+  position: fixed;
+  right: 0;
+  left: 0;
+  background: #000;
+}
+header ul {
+  margin-bottom: 0;
+}

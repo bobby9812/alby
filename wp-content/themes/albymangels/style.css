@@ -1,0 +1,88 @@
+@charset "UTF-8";
+/*
+Theme Name: Twenty Nineteen
+Theme URI: https://wordpress.org/themes/twentynineteen/
+Author: the WordPress team
+Author URI: https://wordpress.org/
+Description: Our 2019 default theme is designed to show off the power of the block editor. It features custom styles for all the default blocks, and is built so that what you see in the editor looks like what you'll see on your website. Twenty Nineteen is designed to be adaptable to a wide range of websites, whether you’re running a photo blog, launching a new business, or supporting a non-profit. Featuring ample whitespace and modern sans-serif headlines paired with classic serif body text, it's built to be beautiful on all screen sizes.
+Requires at least: WordPress 4.9.6
+Version: 1.4
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: twentynineteen
+Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, rtl-language-support, sticky-post, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Twenty Nineteen is based on Underscores https://underscores.me/, (C) 2012-2018 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+#section-contact .contact-holder {
+    z-index: 2;
+    position: relative;
+}
+.modal.modal-special-offer {
+	background-color: rgba(0, 0, 0, .9);
+	padding-top: 0px;
+	z-index: 99;
+	padding-right: 0 !important;
+}
+.modal-special-offer .close {
+	right: 50px!important;
+	top: 50px!important;
+	opacity: 1;
+}
+.modal-special-offer .modal-dialog {
+	width: 600px;
+	text-align: center;
+	border: 2px solid #FF4040;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%) !important;
+	-ms-transform: translate(-50%,-50%) !important;
+	-o-transform: translate(-50%,-50%) !important;
+	transform: translate(-50%,-50%) !important;
+	margin: 0;
+	border-radius: 3px;
+}
+.modal-special-offer .modal-content {
+	background-color: #000;
+	margin: 0;
+	width: 100%;
+}
+.modal-special-offer .modal-content p {
+	margin-bottom: 0;
+	font-size: 23px;
+	line-height: initial;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	padding: 1em 9px;
+}
+@media (max-width: 600px) {
+	.modal-special-offer .modal-dialog {
+		width: 400px;
+	}
+}
+
+/* September 2 */
+@media screen and (max-height: 1080px) {
+	.vimeo-holder iframe {
+		height: 870px;
+	}
+}
+@media screen and (max-height: 900px) {
+	.vimeo-holder iframe {
+		height: 700px !important;
+	}
+}
+@media (max-width: 991px) {
+	section#section-gallery #carouselGallery .carousel-inner .item a {
+		height: 500px;
+	}
+}
